@@ -35,7 +35,7 @@ const ThemeToggle = () => {
   return (
     <button 
        onClick={toggle}
-       className="w-9 h-9 rounded-full border border-[hsl(220,14%,86%)] flex items-center justify-center text-[hsl(215,15%,45%)] hover:text-[hsl(210,20%,10%)] hover:border-[hsl(230,80%,55%)] transition-all"
+       className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary transition-all"
        aria-label="Toggle theme">
         { dark ? <FiSun size={16} /> : <FiMoon size={16} />}
     </button>
