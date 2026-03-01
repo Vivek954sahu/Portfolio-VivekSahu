@@ -37,8 +37,8 @@ const Header = () => {
     className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300  ${scrolled ? "bg-background/40 backdrop-blur-md border-b border-border shadow-lg" : "bg-transparent"}`}>
         <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
             {/* Logo */}
-            <a href="#home" className="font-mono text-xl font-bold text-foreground">
-                &lt; <span className="gradient-text">Vivek Sahu</span> /&gt;
+            <a href="#home" className="font-mono text-3xl font-bold text-foreground">
+                &lt;<span className="gradient-text">Vivek Sahu</span>/&gt;
             </a>
 
             {/* DeskTop Navigation */}
@@ -58,7 +58,7 @@ const Header = () => {
                 <a 
                   href={resume}
                   download
-                  className="gradient-bg text-primary-foreground px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity glow"
+                  className="text-primary-foreground px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity glow-hover"
                  >
                     Resume
                 </a>
@@ -91,7 +91,7 @@ const Header = () => {
                             <button
                             key={link.href}
                             onClick={() => handleClick(link.href)}
-                            className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium uppercase"
+                            className="text-foreground hover:text-muted-foreground transition-colors text-sm font-medium uppercase"
                             >
                                 { link.label}
                             </button>
@@ -100,7 +100,7 @@ const Header = () => {
                         <a 
                           href={resume}
                           download
-                          className="gradient-bg text-primary-foreground px-5 py-2 rounded-full text-sm font-semibold"
+                          className="text-primary-foreground px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity glow"
                           >
                             Resume
                         </a>
