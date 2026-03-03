@@ -16,7 +16,7 @@ import {
 } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";
 import ScrollFadeIn from "./ScrollFadeIn";
-import ProfilePic from "../assets/VivekSahuProfilePic.jpg";
+import ProfilePic from "../assets/ViveksahuProfilePic.jpg";
 
 const skills = {
   Frontend: [
