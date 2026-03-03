@@ -1,16 +1,12 @@
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const ScrollFadeIn = ({ children, className = "", delay = 0 }) => {
-  const ref = useRef(null);
-
-  const inView = useInView(ref, { margin: "-80px" });
-
+  
   return (
     <motion.div
-      ref={ref}
       initial={{ opacity: 0, y: 40 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.5, margin: "-60px" }}
       transition={{ duration: 0.4, delay, ease: "easeOut" }}
       className={className}
     >

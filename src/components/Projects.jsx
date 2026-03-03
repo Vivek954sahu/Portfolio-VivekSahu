@@ -98,7 +98,24 @@ const ProjectCard = ({ project }) => {
           {project.description}
         </p>
 
-        <div></div>
+        <div className="flex flex-wrap gap-2 mb-5">
+          {project.techStack.map((tag) => (
+            <span
+              key={tag}
+              className="text-xs font-medium px-2.5 py-1 rounded-md transition-colors duration-300"
+              style={{
+                backgroundColor: hovered
+                  ? `hsl(${project.hoverHue} 70% 50% / 0.15)`
+                  : `hsl(var(--primary) / 0.1)`,
+                color: hovered
+                  ? `hsl(${project.hoverHue}, 70%, 55%)`
+                  : `hsl(var(--primary))`,
+              }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
 
         <div className="flex gap-3">
           <a
