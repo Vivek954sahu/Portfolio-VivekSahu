@@ -121,6 +121,7 @@ const ProjectCard = ({ project }) => {
           <a
             href={project.liveLink}
             className="flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-60 transition-opacity"
+            target="_blank"
           >
             <FiExternalLink size={14} /> Live
           </a>
@@ -128,6 +129,7 @@ const ProjectCard = ({ project }) => {
           <a
             href={project.githubLink}
             className="flex items-center gap-1.5 text-sm font-medium text-primary transition-opacity hover:opacity-60"
+            target="_blank"
           >
             <FiGithub size={14} /> GitHub
           </a>
